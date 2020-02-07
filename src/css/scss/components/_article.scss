@@ -1,0 +1,272 @@
+.article {
+	&__content {
+		padding: 1rem 0 2rem 0;
+	}			
+
+	&__header {
+		margin: 0 0 1rem 0;
+		font-weight: 600;	
+	}
+	
+	&__date {						
+		letter-spacing: 6px;		
+	}	
+
+	&__tag {		
+		color: black;		
+		text-decoration-line: underline;
+	}	
+
+	&__main-title {
+		margin: 0 0 1.8rem 0;
+	}
+
+	&__img {
+		max-height: 280px;
+	}
+
+	&__sub-title {
+		margin: 0;
+	}		
+
+	&__text {
+		margin: 0;
+	}
+
+	&__inner-link {
+		width: 198px;
+		height: 40px;
+		border: 1px solid white;
+
+		&:hover {
+			color: $blue;
+		}
+	}
+
+	&__outer-link {
+		margin: 0 auto 2.4375rem;
+		width: 238px;
+		height: 42px;		
+		background-color: $gray;
+
+		&:hover {
+			color: $light-blue;
+		}
+	}	
+
+	&_latest-articles {
+		.article__content {
+			padding: 1.1rem 0.75rem 2rem 0.8125rem;					
+		}
+
+		.article__header {
+			margin: 0 0 1.15rem 0;
+			width: 100%;
+			font-weight: 300;
+		}
+
+		.article__tag {
+			color: white;
+		}				
+
+		.article__text {
+			margin: 1.2rem 0 1.3rem 0;
+		}			
+	}
+
+	&_featured {
+		.article__main-title {
+			margin: 0;
+		}			
+
+		.col-sm-6 {
+			 .article__sub-title {
+				margin: 0 0 1.2rem 0;
+				text-transform: none;
+			}
+
+			.article__date {
+				color: black;				
+			}
+		}	
+	}
+
+	&_newsletter {
+		margin: 0 0 0.9rem;
+
+		.article__content {
+			padding: .1rem 0 0;
+			min-height: 175px;
+		}
+
+		.article__sub-title {
+			margin: 0 0 1.75rem;	
+			text-align: center;
+		}		    
+	}	
+}
+
+@media (max-width: 575px) {
+	.article {
+		&_newsletter > .flex {
+			margin-right: -12px;
+    		margin-left: -12px;
+		}
+	}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+	.article {
+		&_featured .col-sm-4, &_interviews, &_news {
+			.article__date {						
+				letter-spacing: 1px;		
+			}	
+		}
+	}
+}
+
+@media( min-width: 768px ) {
+	.article {
+		&_latest-articles {
+			.article__content {
+				padding: 0 1.125rem 1.2rem 1.3125rem;				
+			}
+
+			.article__header {
+				margin: 1.1rem 0 1.3rem;
+			}
+
+			.article__text {			
+				margin-bottom: 2rem;
+			}
+		}
+
+		&_featured {
+			.article__main-title {
+				margin: 3.75rem 0 1.25rem;
+			}
+
+			.article__content {
+				padding: 1.2rem 0 2.3rem;
+			}
+
+			.article__outer-link {
+				margin: .7rem auto 3.75rem;
+			}				
+		}		
+
+		&_interviews {
+			.article__main-title {
+				margin: 3.2rem 0 2rem;
+			}				
+
+			.article__content {
+				padding-top: 0.9rem;
+			}	
+
+			.article__outer-link {
+				margin: 1.3125rem auto 2.1rem;
+			}
+		}
+
+		&_news {
+			.article__main-title {
+				margin: 0 0 1.5rem;
+			}
+
+			.article__content {
+				padding-top: 0.7rem;
+			}				
+
+			.article__outer-link {
+				margin: 1rem auto 4.375rem;
+			}
+		}
+	}
+}
+
+@media( min-width: 970px ) {
+	.article {
+		&_latest-articles {		
+			.article__header {
+				margin: 0rem 0 2rem;
+			}
+
+			.article__date {
+				letter-spacing: 7px;
+			}
+
+			.article__text {
+			    margin: 1.7rem 0 2.8rem 0;
+			}			
+
+			.article__inner-link {
+			    height: 55px;
+			}
+		}
+
+		&_featured {
+			.col-sm-6 {
+				.article__content {
+					padding: 1.5rem 0 3.6rem;
+				}
+
+				.article__sub-title {
+				    margin-top: 1.8rem;
+				}
+			}
+
+			.article__outer-link {
+				margin-top: 1.5rem;
+			}	
+		}
+
+		&_interviews {
+			.article__outer-link {
+				margin: 2rem auto 3.7rem;
+			}	
+		}
+
+		&_news {
+			.article__outer-link {
+				margin: 1.45rem auto 5.4rem;
+			}
+		}
+
+		&_featured .col-sm-4, &_interviews, &_news {
+			.article__header {
+				margin: 0 0 1.6rem 0;
+			}
+		}
+	}
+}
+
+@media( min-width: 1239px ) {
+	.article {
+		&_latest-articles {
+			.article__content {
+				padding: 0 110px 0 108px;
+			}
+
+			.article__header {
+			    margin: 0rem 0 4rem;
+			}
+
+			.article__text {
+			    margin: 1.7rem 0 3rem;
+			}			
+		}
+
+		&_featured {
+			.article__main-title {
+				margin-bottom: 2rem;
+			}
+
+			.col-sm-6 {
+				.article__content {
+				    padding-bottom: 2.3rem;
+				}
+			} 
+		}
+	}
+}

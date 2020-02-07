@@ -1,0 +1,54 @@
+$grid-columns:      12;
+$grid-gutter-width: 24px;
+
+$grid-breakpoints: (
+	// Extra small screen / phone
+	xs: 0,
+	// Small screen / phone
+	sm: 576px,
+	// Medium screen / tablet
+	md: 768px,
+	// Large screen / desktop
+	lg: 992px,
+	// Extra large screen / wide desktop
+	xl: 1200px
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px
+);
+
+/*Fonts*/
+
+$font-primary: 'Kanit';
+
+/*Colors*/
+
+$light-white: #f8f9fa;
+$light-black: #1F1F1D;
+$gray: #303030;
+$blue: #007bff;
+$light-blue: #63aeff;
+
+/*Text*/
+
+$text-xxs: 0.75rem;
+$text-xs: 0.875rem;
+$text-s: 1rem;
+$text-m: 1.125rem;
+$text-l: 1.5rem;
+$text-xl: 1.75rem;
+$text-xxl: 2.125rem;
+
+/*Line-height*/
+
+$line-height-xxs: 1.125rem;
+$line-height-xs: 1.3125rem;
+$line-height-s: 1.5rem;
+$line-height-m: 1.6875rem;
+$line-height-l: 2.25rem;
+$line-height-xl: 2.625rem;
+$line-height-xxl: 3.1875rem;

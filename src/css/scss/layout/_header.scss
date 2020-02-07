@@ -1,0 +1,28 @@
+.header {
+	height: 65px;
+
+	&__title {
+		margin: 0 auto;
+		position: absolute;
+		left: 0;
+		right: 0;
+	}	
+}
+
+@media( min-width: 576px ) {
+	.header {
+		&__navigation {
+			margin: 0 0 0 1.4375rem;
+		}
+	}
+}
+
+@media( min-width: 992px ) {
+	.header {
+		height: 120px;
+
+		&__navigation {
+			margin: 0 0 0 3.1875rem;
+		}
+	}
+}

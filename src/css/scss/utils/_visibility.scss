@@ -1,0 +1,15 @@
+.visible-md, .visible-lg, {
+	visibility: hidden;
+}
+
+@media( min-width: 768px ) {
+	.visible-md {
+		visibility: visible;
+	}
+}
+
+@media( min-width: 970px ) {
+	.visible-lg {
+		visibility: visible;
+	}
+}

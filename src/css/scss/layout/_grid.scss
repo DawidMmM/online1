@@ -1,0 +1,47 @@
+.container-fluid {
+	@include make-container();	
+}
+
+.row {
+	@include make-row();		
+}
+
+.col-sm-4 {
+	@include media-breakpoint-up(sm) {
+	    @include make-col(4);
+	}
+}
+
+.col-sm-6 {
+	@include media-breakpoint-up(sm) {
+	    @include make-col(6);
+	}
+}
+
+.col-sm-4, .col-sm-6 {
+	@include make-col-ready();
+}
+
+@media( min-width: 576px ) {
+	.container-fluid {
+		padding-right: 24px;
+	    padding-left: 24px;
+	}
+
+	.row {
+		margin-right: -15px;
+	    margin-left: -15px;
+	}
+
+	.col-sm-4, .col-sm-6 {
+		padding-right: 15px;
+	    padding-left: 15px;
+	}
+}
+
+@media( min-width: 992px ) {
+	.container-fluid {
+		padding-right: 150px;
+	    padding-left: 150px;
+	}
+}
